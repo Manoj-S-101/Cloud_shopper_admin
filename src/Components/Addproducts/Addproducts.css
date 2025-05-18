@@ -1,0 +1,123 @@
+.addproducts{
+    position: absolute;
+    top: 100px;
+    left: 240px;
+}
+.addproducts input{
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 2px 2px; 
+    width: 550px;
+}
+.addproducts *{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.addproducts .price-class{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.addproducts .price-class input{
+    width: 270px;
+} 
+.addproducts .image-upload{
+    margin: 15px;
+}
+
+.addproducts .image-upload p{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.addproducts .image-upload p label{
+    cursor: pointer;
+}
+.addproducts .image-upload p img{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.addproducts .category-select select{
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 2px;
+    width: 550px;
+}
+.addproducts .image-upload input{
+    display: none;
+}
+
+.addproducts .addproduct-btns{
+    flex-direction: row;
+    gap: 20px;
+}
+
+.addproducts .addproduct-btns button{
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: white;
+}
+
+.addproducts .addproduct-btns .addproduct-btn:hover{
+    background-color: rgba(99, 99, 247, 0.819);;
+}
+.addproducts .addproduct-btns .addproduct-btn{
+    background-color: rgb(99, 99, 247);
+}
+
+.addproducts .addproduct-btns .clrproduct-btn{
+    background-color: rgb(247, 99, 99);
+}
+
+.addproducts .addproduct-btns .clrproduct-btn:hover{
+    background-color: rgba(247, 99, 99, 0.775);
+}
+
+@media(max-width:800px){
+    .addproducts{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 5px 8px;
+    }
+    .addproducts input{
+        width: 485px;
+    }
+    .addproducts .category-select select{
+        width: 485px;
+    }
+    .addproducts .price-class input{
+        width: 235px;
+    }
+}
+
+@media(max-width:500px){
+    .addproducts input{
+        width: 250px;
+    }
+    .addproducts .category-select select{
+        width: 250px;
+    }
+    .addproducts .price-class input{
+        width: 100px;
+    }
+}

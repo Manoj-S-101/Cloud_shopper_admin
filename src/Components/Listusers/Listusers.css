@@ -1,0 +1,75 @@
+.listusers{
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    margin: 10px;
+}
+.listusers hr{
+    height: 3px;
+    background-color: rgb(204, 201, 201);
+    border: 0;
+}
+
+.listusers .topic-details{
+    display: grid;
+    grid-template-columns: 1.3fr 2.6fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.listusers .display-users{
+    display: flex;
+    flex-direction: column;
+}
+
+.display-users-inside-one{
+    display: grid;
+    grid-template-columns: 1.3fr 2.6fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px;
+    gap: 10px;
+}
+
+.display-users-inside-one .remove-user{
+    cursor: pointer;
+}
+
+@media(max-width:800px){
+    .listusers{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 3px 1px;
+    }
+}
+
+@media(max-width:510px){
+    .listusers{
+        margin: 20px 20px;
+    }
+    .display-users-inside-one .email,.listusers .topic-details .email{
+        display: none;
+    }
+    .listusers .topic-details{
+        grid-template-columns: 1.3fr 1fr 1fr 1fr;
+        font-size: 14px;
+    }
+    .display-users-inside-one{
+        grid-template-columns: 1.3fr 1fr 1fr 1fr;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .listusers .in-small{
+        display: block;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    
+}
