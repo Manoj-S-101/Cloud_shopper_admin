@@ -34,7 +34,7 @@ const Login = () => {
         }
     }    
     if(loggedIn){
-      window.location.replace('/addproducts');
+      window.location.replace('/');
     }
   return (
     <div className='Login-container'>
